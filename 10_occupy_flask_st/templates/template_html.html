@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+
+  <head>
+
+    <style>
+
+    table, th, td {
+      border: 1px solid black;
+      width: 75%;
+      padding: 15px;
+      width:70%;
+      margin-left:15%;
+      margin-right:15%;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    </style>
+
+    <title>{{title}}</title>
+
+  </head>
+
+  <body>
+    <h1>Occupations</h1>
+
+    <br>
+
+    <p>Your randomly chosen occupation is <b><i>{{rand_occ}}<i></b></p>
+
+    <br>
+
+    <table>
+
+      <tr>
+        <th><h2>Occupation</h2></th>
+        <th><h2>Percentage</h2></th>
+      </tr>
+
+      {%for occ in dict%}
+
+      <tr>
+        <th>{{occ}}</th>
+        <th>{{dict[occ]}}%</th>
+      </tr>
+
+      {%endfor%}
+
+    </table>
+
+  </body>
+
+</html>
