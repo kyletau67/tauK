@@ -1,17 +1,20 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route("/")
 def go():
-    render_template("fields.html")
+    return render_template("fields.html")
     print(app)
 
 @app.route("/auth")
 def authenticate():
     print(app)
-    print(request)
-    print(request.args)
-    return "Waaaa hooo HAAAH"
+    #print(request)
+    #print(request.args)
+    print(request.args['username'])
+    print(request.headers)
+    return render_template("response.html",
+			name = request.args['username'])
     
 if __name__ == "__main__":
     app.debug = True
