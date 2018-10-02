@@ -29,7 +29,8 @@ def welcome():
 @app.route("/logout")
 def go():
     if 'username' in session:
-        session.pop['username']
+        print (session['username'])
+        session.clear()
     return "You have logged out."
 
 if __name__ == "__main__":
