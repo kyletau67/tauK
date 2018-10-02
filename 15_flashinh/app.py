@@ -1,19 +1,16 @@
 #TomJerry - Britni Canale & Kyle Tau
 #SoftDev1 pd 6
-#K14 -- Do I Know You?
-#2018-10-01
+#K15 -- Oh yes, perhaps I do...
+#2018-10-02
 
 from flask import Flask, render_template, session, request, url_for, redirect, flash
 import os
-
 app = Flask(__name__)
-
-
 app.secret_key = os.urandom(32)               #generates random 32-bit secret_key
-
     
 uname = "tom"                                 #HARDCODED USERNAME AND PASSWORD       
 pword = "jerry"
+
 
 @app.route("/")                               #root route, redirects to welcome if logged in, loads login page if not
 def login():
@@ -44,6 +41,7 @@ def welcome():
                 flash("Your password is incorrect")
             return redirect(url_for("login"))
     return render_template("welcome.html", uname = uname)
+
 
 @app.route("/logout")                         #route for logging out
 def go():
