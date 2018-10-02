@@ -1,0 +1,27 @@
+<!--                                  
+TomJerry - Britni Canale & Kyle Tau   
+SoftDev1 pd 6                         
+K14 -- Do I Know You?                 
+2018-10-01                            
+-->
+
+{% extends "base.html" %}
+
+
+
+{% block heading %}
+
+<style="textalign:center;"> Welcome {{uname}}!  <!--welcomes user-->
+    
+{% endblock %}
+
+
+{% block form %}
+
+  <form action="/logout" id="logoutform">
+
+    <button href="/logout" inputtype="button" form="logoutform" value="Logout">LOGOUT</button>  <!--button for logging out-->
+
+  </form>
+
+{% endblock %} 
