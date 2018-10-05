@@ -24,12 +24,12 @@ def populate():
     with open('data/peeps.csv') as infile: #populate peeps
         peepsR = csv.DictReader(infile)
         for row in peepsR:
-            c.execute('INSERT INTO peeps VALUES (row['name'], row['age'], row['id']) #add for every row
+            c.execute("INSERT INTO peeps VALUES (" +row['name']+ "," +row['age']+ "," +row['id']+ ")") #add for every row
 
     with open('data/courses.csv') as infile: #populate courses
         coursesR = csv.DictReader(infile)
         for row in coursesR:
-            c.execute('INSERT INTO courses VALUES (row['code'], row['mark'], row['id']) #add for every row
+            c.execute("INSERT INTO peeps VALUES (" +row['code']+ "," +row['mark']+ "," +row['id']+ ")") #add for every row
 
 
 #==========================================================
