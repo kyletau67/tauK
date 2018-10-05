@@ -31,7 +31,7 @@ def populate():
         for row in coursesR:
             c.execute("INSERT INTO peeps VALUES (" +row['code']+ "," +row['mark']+ "," +row['id']+ ")") #add for every row
 
-
+populate()
 #==========================================================
 
 db.commit() #save changes
