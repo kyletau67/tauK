@@ -1,0 +1,17 @@
+/* stuff.css */
+body {
+	background-color:#6A6A6A;border:10px solid #505050; }
+h1 {
+	background-color:#AAAAAA;color:#FFFFFF;text-align:center;margin-top:0px;margin-bottom:0px }
+h3 {
+	padding-left:5px }
+ul {
+	color:white;list-style:none;padding-left:5px; }
+a {
+	text-decoration:none;color:white; }
+#main {
+	float:left;margin-left:100px;margin-top:-140px; }
+#left {
+	overflow:auto;float:left;margin-top:-10px }
+#bar {
+	clear:both;text-align:right;background-color:#444444;padding:8px;padding-right: 10px;color:#6A6A6A; }
