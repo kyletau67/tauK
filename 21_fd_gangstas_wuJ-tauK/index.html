@@ -1,0 +1,161 @@
+<!--Gangstas (Kyle Tau, Jeffrey Wu)
+SoftDev1 pd 6
+K21 -- Who Does Frame Work For?  
+2018-11-08 -->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Foundation Intro</title>
+	<!-- Compressed CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" integrity="sha256-VEEaOnBKVRoYPn4AID/tY/XKVxKEqXstoo/xZ6nemak= sha384-D46t32f421/hB30qwnim2pIcisNN5GU9+6m2Mfnd3dKpTSFidZLa08/1StEiCFId sha512-WkgzH8VKemDfwrp18r+wgbx+oHXOkfd2kJs7ocAXdGDgonXDXh88E90IRtRZRXtO0IHprxYHYlY14h+wyTsUDA==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation-float.min.css" integrity="sha256-6gKcI9FMwYa0cREDijDPEanZX+TXP5FQsAYxgP3PGeY= sha384-whJLw6nWgfRYEj1Vmfxc1YCBXOxktFK7lXPFi5htbBtHofjJt5WnWFWrXmSpAACM sha512-q2pM7Q5U4ewl6vP0upeWuhDCSIecXB4zTXpz7pmy8ir4/YtnrW4CuZT7oh4zgo+7Z9N5qxHiApfwN2ckkdJXIg==" crossorigin="anonymous">
+
+	<body>
+		<!-- showcase top navigation bar -->
+		<div class="top-bar">
+	  <div class="top-bar-left">
+	    <ul class="dropdown menu" data-dropdown-menu>
+	      <li class="menu-text">FOUNDATION SO COOL</li>
+	      <li> <a href="#">One</a></li>
+	      <li><a href="#">Two</a></li>
+	      <li><a href="#">Three</a></li>
+	    </ul>
+	  </div>
+	  <div class="top-bar-right">
+	    <ul class="menu">
+	      <li><input type="search" placeholder="Cool searchhing"></li>
+	      <li><button type="button" class="button">Search</button></li>
+	    </ul>
+	  </div>
+	</div>
+		<br><br>
+		<!-- showcase the 12 column grid and responsive sizes -->
+		<h6>A BOSS GRID SYSTEM</h6>
+		<div class="row">
+			<div class ="small-6 large-4 columns" style="background-color: red">4 red columns(6 if small)</div>
+			<div class="small-4 large-4 columns" style="background-color: blue">4 blue</div>
+			<div class="small-2 large-4 columns" style="background-color: green">4 green(2 if small)</div>
+			<!-- in smaller screens the columns will be different sizes but in full window it should be
+			even-->
+		</div>
+		<br>
+		<!-- showcase the table-->
+		Get to the dinner TABLE
+		<table>
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boom</td>
+      <td>bam</td>
+      <td>0,2</td>
+      <td>0,3</td>
+    </tr>
+    <tr>
+      <td>1,0</td>
+      <td>1,1</td>
+      <td>put it over here</td>
+      <td>and here</td>
+    </tr>
+    <tr>
+      <td>we out HERE</td>
+      <td>2,1</td>
+      <td>get this FOOD</td>
+      <td>mac and ches</td>
+    </tr>
+  </tbody>
+</table>
+
+
+		<!-- responsive form -->
+		<form>
+			Nice FORM
+			<div class="callout clearfix">
+				<div class="callout" data-closable>
+  <button class="close-button" aria-label="Close alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <p>FILL OUT THIS FORM! <br>YOU can Close ME!</p>
+</div>
+				<div class="row">
+					<div class="small-6 medium-12 columns">
+						<label>One Text Box</label>
+						<input type="text" placeholder="one">
+					</div>
+					<div class="small-6 medium-12 columns">
+						<label>Two Text Box</label>
+						<input type="text" placeholder="two">
+					</div>
+				</div>
+				<label>Multiple Select Menu
+  <select multiple>
+    <option value="1">ctrl or command </option>
+    <option value="2">click to select multiple</option>
+    <option value="3">option3</option>
+    <option value="4">option4</option>
+  </select>
+</label>
+
+<label for="exampleFileUpload" class="button">Upload File</label>
+<input type="file" id="exampleFileUpload" class="show-for-sr">
+
+<div class="grid-x grid-padding-x">
+  <fieldset class="large-5 cell">
+    <legend>Favorite Color ?</legend>
+    <input type="radio" name="fave" value="red" id="red" required><label for="red">Red</label>
+    <input type="radio" name="fave" value="blue" id="blue"><label for="blue">Blue</label>
+    <input type="radio" name="fave" value="yellow" id="yellow"><label for="yellow">Yellow</label>
+  </fieldset>
+  <fieldset class="large-7 cell">
+    <legend>Check it</legend>
+    <input id="checkbox1" type="checkbox"><label for="checkbox1">nike1</label>
+    <input id="checkbox2" type="checkbox"><label for="checkbox2">nike2</label>
+    <input id="checkbox3" type="checkbox"><label for="checkbox3">nike3</label>
+  </fieldset>
+</div>
+
+				Button Time
+					<a href="#" class="button tiny">very small</a>
+					<a href="#" class="button small">small</a>
+					<a href="#" class="button">mediocre</a>
+					<a href="#" class="button large">big</a>
+					<a href="#" class="button expand">nice and long and long and long </a> <br>
+
+				Switcheroo
+				<div class="switch">
+  <input class="switch-input" id="switch" type="checkbox" name="switch">
+  <label class="switch-paddle" for="switch">
+    <span class="show-for-sr"></span>
+  </label>
+</div>
+		</div>
+		</form>
+
+		<!-- flaoting -->
+
+
+
+		<!-- Pagination -->
+		<nav aria-label="Pagination">
+			<ul class="pagination text-center">
+				<li class="pagination-previous disabled">Previous</li>
+				<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+				<li><a href="#" aria-label="Page 2">2</a></li>
+				<li><a href="#" aria-label="Page 3">3</a></li>
+				<li><a href="#" aria-label="Page 4">4</a></li>
+				<li class="ellipsis"></li>
+				<li><a href="#" aria-label="Page 12">12</a></li>
+				<li><a href="#" aria-label="Page 13">13</a></li>
+				<li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+			</ul>
+		</nav>
+	</body>
+	</html>
