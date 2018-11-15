@@ -1,0 +1,18 @@
+<!-- Kyle Tau
+SoftDev1 pd6
+K25 -- Getting More REST
+2018-11-14 -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Food2Fork API</title>
+  </head>
+
+  <body>
+    <h1>You want some dip???</h1>
+    <img src= {{pic}}>
+  </body>
+
+</html>
