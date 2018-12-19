@@ -1,7 +1,7 @@
-// Team Big KAraZIes -- Tim Marder & Ahnaf Kazi
-// SoftDev pd06
-// K#28 -- Sequential Progression
-// 2018-12-18
+//Team OK -- Ahnaf Kazi & Kyle Tau
+//SoftDev pd06
+//K#29 -- Sequential Progression II: Electric Boogaloo
+//2018-12-19
 
 var fibonacci = (n) => {
 
@@ -14,7 +14,7 @@ var fibonacci = (n) => {
     else { //all other cases
         return fibonacci(n-2) + fibonacci(n - 1); //adds number and the one before it
     }
-}
+};
 
 var gcd = ( a , b ) => {
 
@@ -31,7 +31,7 @@ var gcd = ( a , b ) => {
     }
     return result; //returns the gcd
 
-}
+};
 
 var randomStudent = () => {
 
@@ -44,20 +44,26 @@ var randomStudent = () => {
 
     var student = students[Math.floor( random * amount )];
     //random function takes place and student is chosen
-
+    console.log(student);
     return student;
     //chosen student is returned
 
-}
+};
 
-var test = () => {
-    return 7;
+var fibbonaciFour = () => {
+    console.log(fibbonacci(4));
+    return fibbonacci(4);
+};
+
+var gcdGo = () {
+    console.log(gcd(2,4));
+    return gcd(2,4);
 };
 
 var fibbut = document.getElementById("fib");
 var gcdbut = document.getElementById("gcd");
 var stubut = document.getElementById("stu");
 var test = document.getElementById("button");
-fibbut.addEventListener('click', fibonacci);
-gcdbut.addEventListener('click', gcd);
+fibbut.addEventListener('click', fibonacciFour);
+gcdbut.addEventListener('click', gcdGo);
 stubut.addEventListener('click', randomStudent);
