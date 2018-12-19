@@ -1,3 +1,7 @@
+//Team Kaile (Kyle Tau, Kaitlin Wan)
+//SoftDev1 pd 6
+//K28 -- Sequential Progression
+//2018-12-18
 
 function fibbonacci(num){
   var a = 1, b = 0, temp;
@@ -10,7 +14,7 @@ function fibbonacci(num){
   return b
 }
 
-function min(a,b) {
+function min(a,b) { //helper function to find minimum of two values
   if (a<=b){
     return a;
   }
@@ -32,7 +36,6 @@ function gcd(a,b) {
 
 function randomStudent(){
   var names = ["Kaitlin", "Kyle", "Tim", "Mr. Brown", "Aaron", "Ricky"];
-  var x = Math.floor(Math.random(names.length - 1 )*names.length);
-
-  return names[x] + x;
+  var x = Math.floor(Math.random(names.length - 1 )*names.length); //index
+  return names[x];
 }
