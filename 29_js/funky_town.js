@@ -44,19 +44,19 @@ var randomStudent = () => {
 
     var student = students[Math.floor( random * amount )];
     //random function takes place and student is chosen
-    console.log(student);
+    console.log(student); //log to the console
     return student;
     //chosen student is returned
 
 };
 
-var fibbonaciFour = () => {
-    console.log(fibbonacci(4));
-    return fibbonacci(4);
+var fibbonaciGo = () => {
+    console.log(fibonacci(4)) //log to the console
+    return fibonacci(4);
 };
 
-var gcdGo = () {
-    console.log(gcd(2,4));
+var gcdGo = () => {
+    console.log(gcd(2,4)); //log to the console
     return gcd(2,4);
 };
 
@@ -64,6 +64,7 @@ var fibbut = document.getElementById("fib");
 var gcdbut = document.getElementById("gcd");
 var stubut = document.getElementById("stu");
 var test = document.getElementById("button");
-fibbut.addEventListener('click', fibonacciFour);
+fibbut.addEventListener('click', fibbonaciGo);
 gcdbut.addEventListener('click', gcdGo);
 stubut.addEventListener('click', randomStudent);
+//randomstudent doesn't need a parameter
